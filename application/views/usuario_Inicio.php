@@ -149,6 +149,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div><!-- /.navbar-collapse -->
 	</nav>
 </aside>
+
 <!-- /#left-panel -->
 <!-- Right Panel -->
 <div id="right-panel" class="right-panel">
