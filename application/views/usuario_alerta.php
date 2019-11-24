@@ -150,6 +150,9 @@
 									<div class="col col-md-3"><label for="textarea-input" class=" form-control-label">Descripción breve</label></div>
 									<div class="col-12 col-md-9"><textarea name="textarea-input" id="textarea-input" rows="9" placeholder="Ingrese descripción aquí" class="form-control"></textarea></div>
 								</div>
+								<div class="form-actions form-group">
+                                    <button type="button" class="btn btn-primary btn-sm"><i class="fa fa-share"></i>&nbsp; Enviar</button>
+                                </div>
 							</form>
 						</div>
 					</div>
