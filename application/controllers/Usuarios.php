@@ -4,7 +4,7 @@ class Usuarios extends CI_Controller{
 	public function inicio(){
 		$this->load->model('Usuarios_Model','UM',true);
 		$datos['Usuarios']=$this->UM->getAll();
-		$this->load->view('usuario_Inicio.php',$datos);
+		$this->load->view('usuario_inicio.php',$datos);
 	}
 
 	public function tareas(){
