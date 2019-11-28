@@ -40,13 +40,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<div id="main-menu" class="main-menu collapse navbar-collapse">
 			<ul class="nav navbar-nav">
 				<li>
-					<a href="index_jefe_turno.html"><i class="menu-icon fa fa-check-square-o"></i>Tareas </a>
+					<a href="inicio"><i class="menu-icon fa fa-check-square-o"></i>Tareas </a>
 				</li>
 				<li>
-					<a href="trbajadores_jefe_turno"><i class="menu-icon fa fa-male"></i>Trabajadores </a>
+					<a href="trabajadores"><i class="menu-icon fa fa-male"></i>Trabajadores </a>
 				</li>
 				<li>
-					<a href="alertas.html"><i class="menu-icon fa fa-exclamation-triangle"></i>Alertas </a>
+					<a href="alertas"><i class="menu-icon fa fa-exclamation-triangle"></i>Alertas </a>
 				</li><!--Esto redirecciona al aviso de alerta-->
 			</ul>
 		</div><!-- /.navbar-collapse -->

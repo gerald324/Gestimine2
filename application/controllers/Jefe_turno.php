@@ -9,5 +9,9 @@ class Jefe_turno extends CI_Controller{
 	public function trabajadores(){
 		$this->load->view('jefe_turno_trabajadores.php');
 	}
+
+	public function alertas(){
+		$this->load->view('jefe_turno_alerta.php');
+	}
 }
 ?>
