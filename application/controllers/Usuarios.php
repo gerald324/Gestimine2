@@ -1,7 +1,7 @@
 <?php
 
 class Usuarios extends CI_Controller{
-	public function inicio(){
+	public function index(){
 		$this->load->model('Usuarios_Model','UM',true);
 		$datos['Usuarios']=$this->UM->getAll();
 		$this->load->view('usuario_inicio.php',$datos);
