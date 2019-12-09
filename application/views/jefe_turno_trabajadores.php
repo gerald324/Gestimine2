@@ -40,7 +40,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<div id="main-menu" class="main-menu collapse navbar-collapse">
 			<ul class="nav navbar-nav">
 				<li>
-					<a href="inicio"><i class="menu-icon fa fa-check-square-o"></i>Tareas </a>
+					<a href="index"><i class="menu-icon fa fa-check-square-o"></i>Tareas </a>
 				</li>
 				<li>
 					<a href="trabajadores"><i class="menu-icon fa fa-male"></i>Trabajadores </a>
