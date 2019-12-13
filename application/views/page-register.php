@@ -1,3 +1,6 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+?>
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
@@ -33,34 +36,26 @@
             <div class="login-content">
                 <div class="login-logo">
                     <a href="index.html">
-                        <img class="align-content" src="images/5547-256x256x32.png" alt="">
+                        <img class="align-content" src="assets/images/logo.png" alt="">
                     </a>
                 </div>
                 <div class="login-form">
                     <form>
                         <div class="form-group">
                             <label>Rut</label>
-                            <input type="email" class="form-control" placeholder="12345678-9">
+                            <input type="email" class="form-control" placeholder="12.345.678-9">
+                        </div>
+                        <div class="form-group">
+                            <label>Correo electrónico</label>
+                            <input type="email" class="form-control" placeholder="correo@electronico.cl">
                         </div>
                         <div class="form-group">
                             <label>Contraseña</label>
                             <input type="password" class="form-control" placeholder="*****">
                         </div>
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox"> Recuérdame
-                            </label>
-                            <label class="pull-right">
-                                <a href="#">¿Olvidaste tu contraseña?</a>
-                            </label>
-
-                        </div>
-                        <button type="submit" class="btn btn-success btn-flat m-b-30 m-t-30">Ingresar</button>
-                        <div>
-                        	<br>
-                        </div>
+                        <button type="submit" class="btn btn-primary btn-flat m-b-30 m-t-30">Registrarse</button>
                         <div class="register-link m-t-15 text-center">
-                            <p>¿No tienes cuenta? <a href="#"> Regístrate aquí</a></p>
+                            <p>¿Ya tienes una cuenta? <a href="<?= $menu['login'] ?>"> Ingresa aquí</a></p>
                         </div>
                     </form>
                 </div>

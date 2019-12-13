@@ -30,7 +30,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script> -->
 </head>
 <body class="bg-dark">
-
 <?= form_error('rut') ?>
 <?= form_error('password') ?>
 
@@ -72,7 +71,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         	<br>
                         </div>
                         <div class="register-link m-t-15 text-center">
-                            <p>¿No tienes cuenta? <a href="#"> Regístrate aquí</a></p>
+                            <p>¿No tienes cuenta? <a href="<?= $menu['registro'] ?>"> Regístrate aquí</a></p>
                         </div>
                     </form>
                 </div>

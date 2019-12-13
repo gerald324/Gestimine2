@@ -5,11 +5,12 @@ class Login extends CI_Controller{
 	public function __construct(){
 		parent::__construct();
 		$this->load->library('form_validation');
-		$this->load->helper(array('auth/login_rules'));
+		$this->load->helper(array('auth/login_rules','mainmenu'));
 	}
 
 	public function index(){
-		$this->load->view('page-login.php');
+		$data['menu'] = getmainmenu();
+		$this->load->view('page-login.php',$data);
 	}
 
 	public function validate(){
