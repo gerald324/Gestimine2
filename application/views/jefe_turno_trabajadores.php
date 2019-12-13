@@ -153,7 +153,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									<?php foreach( $usuarios as $usuario ) : ?>
 									<tr>
 										<td><?php echo $usuario['nombre'] ?></td>
-										<td><?php echo $usuario['cargo']?></td>
+										<td><?php echo $usuario['rol']?></td>
 										<td>
 											<?php $modulos = array(
 												'Módulo 1',
