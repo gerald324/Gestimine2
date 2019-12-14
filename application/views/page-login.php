@@ -30,7 +30,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script> -->
 </head>
 <body class="bg-dark">
-<?php if(form_error('rut')) { ?> <script>alert('<?php echo form_error('rut');?>');</script> <?php }?>
+
 <?php if(form_error('password')) { ?> <script>alert('<?php echo form_error('password');?>');</script> <?php }?>
 
     <div class="sufee-login d-flex align-content-center flex-wrap">
@@ -42,7 +42,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </a>
                 </div>
                 <div class="login-form">
-                    <form action="<?= base_url('login/validate') ?>" method="POST">
+                    <form action="<?= base_url('login/validate') ?>" method="POST" id="forma">
                         <div class="form-group">
                             <label>Rut</label>
                             <input type="string" name="rut" class="form-control" placeholder="12.345.678-9">
@@ -54,7 +54,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <label>Contraseña</label>
                             <input type="password" name="password" class="form-control" placeholder="*****">
                             <div class="invalid-feedback">
-                            	El clave está vacío
+                            	La clave está vacío
                             </div>
                         </div>
                         <div class="checkbox">
@@ -79,11 +79,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.4/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery-match-height@0.7.2/dist/jquery.matchHeight.min.js"></script>
-    <script src="assets/js/main.js"></script>
-
+    <script src="<?php echo base_url()?>/assets/js/jquery-3.4.1.min.js"></script>
+	<script src="<?php echo base_url()?>/assets/js/auth/login.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.4/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery-match-height@0.7.2/dist/jquery.matchHeight.min.js"></script>
+	<script src="<?php echo base_url()?>/assets/js/main.js"></script>
 </body>
 </html>

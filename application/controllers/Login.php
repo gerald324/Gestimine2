@@ -16,12 +16,16 @@ class Login extends CI_Controller{
 	public function validate(){
 		$this->load->model('Usuarios_Model','UM',true);
 		$datos['Usuarios']=$this->UM->getAll();
+		$this->form_validation->set_error_delimiters('','');
 		$rules = getLoginRules();
 		$this->form_validation->set_rules($rules);
 		if($this->form_validation->run() === FALSE){
-			$data['menu'] = getmainmenu();
-			$this->load->view('page-login.php',$data);
-			//$this->load->view('page-login.php');
+			$errors = array(
+				'rut' => form_error('rut'),
+				'password' => form_error('password'));
+				echo json_encode($errors);
+			/*$data['menu'] = getmainmenu();
+			$this->load->view('page-login.php',$data);*/
 		}else{
 			//if(rol === 'PLANIFICADOR'){
 
