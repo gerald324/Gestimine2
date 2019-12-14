@@ -30,8 +30,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script> -->
 </head>
 <body class="bg-dark">
-<?= form_error('rut') ?>
-<?= form_error('password') ?>
+<?php if(form_error('rut')) { ?> <script>alert('<?php echo form_error('rut');?>');</script> <?php }?>
+<?php if(form_error('password')) { ?> <script>alert('<?php echo form_error('password');?>');</script> <?php }?>
 
     <div class="sufee-login d-flex align-content-center flex-wrap">
         <div class="container">
@@ -45,7 +45,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <form action="<?= base_url('login/validate') ?>" method="POST">
                         <div class="form-group">
                             <label>Rut</label>
-                            <input type="email" name="rut" class="form-control" placeholder="12.345.678-9">
+                            <input type="string" name="rut" class="form-control" placeholder="12.345.678-9">
                             <div class="invalid-feedback">
                             	El rut está vacío
                             </div>

@@ -19,7 +19,9 @@ class Login extends CI_Controller{
 		$rules = getLoginRules();
 		$this->form_validation->set_rules($rules);
 		if($this->form_validation->run() === FALSE){
-			$this->load->view('page-login.php');
+			$data['menu'] = getmainmenu();
+			$this->load->view('page-login.php',$data);
+			//$this->load->view('page-login.php');
 		}else{
 			//if(rol === 'PLANIFICADOR'){
 
