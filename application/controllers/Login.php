@@ -6,6 +6,7 @@ class Login extends CI_Controller{
 		parent::__construct();
 		$this->load->library('form_validation');
 		$this->load->helper(array('auth/login_rules','mainmenu'));
+		$this->load->model('Usuarios_Model','UM',true);
 	}
 
 	public function index(){
@@ -14,7 +15,6 @@ class Login extends CI_Controller{
 	}
 
 	public function validate(){
-		$this->load->model('Usuarios_Model','UM',true);
 		$datos['Usuarios']=$this->UM->getAll();
 		$this->form_validation->set_error_delimiters('','');
 		$rules = getLoginRules();
@@ -28,14 +28,29 @@ class Login extends CI_Controller{
 			/*$data['menu'] = getmainmenu();
 			$this->load->view('page-login.php',$data);*/
 		}else{
-			echo json_encode(array('url' => base_url('Jefe_Turno/trabajadores')));
-			//if(rol === 'PLANIFICADOR'){
+			$rut = $this->input->post('rut');
+			$password = $this->input->post('password');
+			$res = $this->UM->login($rut, $password);
+			if(!$res){
+				echo json_encode(array('msg' => 'Credenciales invalidas'));
+				$this->output->set_status_header(401);
+				exit;
+			}
+			$rol_usuario = array(
+				'rol' => $res->rol
+			);
+			if($rol_usuario['rol'] == 'Jefe_Turno'){
+				echo json_encode(array('url' => base_url('Jefe_Turno/trabajadores')));
+				exit;
+			}
+			else if ($rol_usuario['rol'] == 'Perforador'){
+				echo json_encode(array('msg' => 'Perforador'));
+				$this->output->set_status_header(401);
+				exit;
+			}
+			echo json_encode(array('msg' => 'Ninguno'));
+			$this->output->set_status_header(401);
 
-			//}elseif (rol === 'JEFETURNO') {
-				# code...
-			//}else{
-
-			//}
 
 		}
 	}

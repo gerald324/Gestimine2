@@ -45,14 +45,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <form action="<?= base_url('login/validate') ?>" method="POST" id="forma">
                         <div class="form-group">
                             <label>Rut</label>
-                            <input type="string" name="rut" class="form-control" placeholder="12.345.678-9">
+                            <input type="string" name="rut" id="rut" class="form-control" placeholder="12.345.678-9">
                             <div class="invalid-feedback">
                             	El rut está vacío
                             </div>
                         </div>
                         <div class="form-group">
                             <label>Contraseña</label>
-                            <input type="password" name="password" class="form-control" placeholder="*****">
+                            <input type="password" name="password" id="password" class="form-control" placeholder="*****">
                             <div class="invalid-feedback">
                             	La clave está vacío
                             </div>

@@ -19,6 +19,10 @@
 						alert(json.password);
 					}
 				}
+				else if(xhr.status == 401){
+					var json = JSON.parse(xhr.responseText);
+					alert(json.msg);
+				}
 			},
 		});
 	});
