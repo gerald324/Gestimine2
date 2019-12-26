@@ -8,7 +8,7 @@ class Planificador extends CI_Controller{
 		$content_data = array(
 			'usuarios' => $datos['Usuarios']
 		);
-		$this->load->view('jefe_turno_inicio.php');
+		$this->load->view('planificador_inicio.php');
 	}
 
 	public function plan_minero(){
@@ -29,4 +29,13 @@ class Planificador extends CI_Controller{
 		$this->load->view('planificador_alerta.php');
 	}
 
+	public function editar(){
+		//cambiar modelo por modelo del plan minero
+		$this->load->model('Usuarios_model', 'UM', true);
+		$datos['Usuarios']=$this->UM->getAll();
+		$content_data = array(
+
+		);
+		$this->load->view('editar_plan.php');
+	}
 }
