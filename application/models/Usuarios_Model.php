@@ -15,5 +15,20 @@ class Usuarios_Model extends CI_Model {
 		}
 		return $data->row();
 	}
+
+	public function buscarTareasDeTrabajador($rut){
+		$query = "SELECT tu.avance_req, tu.trans_req, t.nombre, u.rol FROM usuario u 
+					JOIN turno_usuario tu ON u.id_usuario = tu.id_usuario
+					JOIN tunel_asignada ta ON tu.id_tunel = ta.id_tunel AND tu.id_turno = ta.id_turno
+					JOIN tunel t ON t.id = ta.id_tunel
+					WHERE u.rut = '$rut'";
+
+		//La query funciona ahora que hay pocos datos, pero se necesita poblar la BD
+		//Para poder corregir estos errores en la condicion
+		$data = $this->db->query($query);
+		$result = $data->result_array();
+
+		return $result;
+	}
 }
 ?>

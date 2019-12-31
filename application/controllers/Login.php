@@ -43,9 +43,11 @@ class Login extends CI_Controller{
 				echo json_encode(array('url' => base_url('Jefe_Turno/trabajadores')));
 				exit;
 			}
-			else if ($rol_usuario['rol'] == 'Perforador'){
-				echo json_encode(array('msg' => 'Perforador'));
-				$this->output->set_status_header(401);
+			else if ($rol_usuario['rol'] == 'Perforador' or $rol_usuario['rol'] == 'Tronador'
+				or $rol_usuario['rol'] == 'Transporte' or $rol_usuario['rol'] == 'Carguero'){
+				//enviamos el parametro $rut al controlador Usuarios/tareas
+				$segmentos_url = array('Usuarios','tareas',$rut);
+				echo json_encode(array('url' => base_url($segmentos_url)));
 				exit;
 			}
 			echo json_encode(array('msg' => 'Ninguno'));

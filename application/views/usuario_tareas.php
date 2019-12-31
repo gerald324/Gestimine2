@@ -134,23 +134,26 @@
 		<div class="row">
 
 			<div class="col-lg-6">
-				<div class="card">
-					<div class="card-header">
-						<h4>Tarea del turno</h4>
-					</div>
-					<div class="card-body">
-						<div class="custom-tab">
+				<table id="bootstrap-data-table" class="table table-striped table-bordered">
+					<thead>
+					<tr>
+						<th>Túnel</th>
+						<th>Avance en metros planificado para este turno</th>
+					</tr>
+					</thead>
+					<tbody>
+						<?php foreach( $tareas_turno as $parametros ) : ?>
 
-
-							<div class="tab-content pl-3 pt-2" id="nav-tabContent">
-								<div class="tab-pane fade show active" id="custom-nav-home" role="tabpanel" aria-labelledby="custom-nav-home-tab">
-									<p>Aqui se linkea con la BD.</p>
-								</div>
-							</div>
-
-						</div>
-					</div>
-				</div>
+							<?php if ($parametros['rol'] == "Perforador" or $parametros['rol'] == "Tronador") { ?>
+								<td><?php echo $parametros['nombre'] ?></td>
+								<td><?php echo $parametros['avance_req'] ?></td>
+							<?php } elseif ($parametros['rol'] == "Transporte" or $parametros['rol'] == "Carguero") { ?>
+								<td><?php echo $parametros['nombre'] ?></td>
+								<td><?php echo $parametros['trans_req'] ?></td>
+							<?php } ?>
+						<?php endforeach; ?>
+					</tbody>
+				</table>
 			</div>
 			<!-- /# column -->
 		</div>
