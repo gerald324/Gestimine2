@@ -17,7 +17,7 @@ class Usuarios_Model extends CI_Model {
 	}
 
 	public function buscarTareasDeTrabajador($rut){
-		$query = "SELECT tu.avance_req, tu.trans_req, t.nombre, u.rol FROM usuario u 
+		$query = "SELECT ta.avance_req, ta.trans_req, t.nombre, u.rol FROM usuario u 
 					JOIN turno_usuario tu ON u.id_usuario = tu.id_usuario
 					JOIN tunel_asignada ta ON tu.id_tunel = ta.id_tunel AND tu.id_turno = ta.id_turno
 					JOIN tunel t ON t.id = ta.id_tunel
