@@ -44,7 +44,7 @@ class Planificador extends CI_Controller{
 		$content_data = array(
 			'usuarios' => $datos['Usuarios']
 		);
-		$this->load->view('planificador_plan_cronograma.php');
+		$this->load->view('planificador_plan_perforacion.php');
 	}
 
 	public function transporte(){

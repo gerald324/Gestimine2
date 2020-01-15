@@ -49,7 +49,7 @@
 					<a href=<?php echo "plan_minero"?>><i class="menu-icon fa fa-clipboard"></i><?php echo "Plan Minero"?></a>
 				</li>
 				<li>
-					<a href=<?php echo "perforacion"?>><i class="menu-icon fa fa-clipboard"></i><?php echo "Perforación"?>></a>
+					<a href=<?php echo "perforacion"?>><i class="menu-icon fa fa-clipboard"></i><?php echo "Perforación"?></a>
 				</li>
 				<li>
 					<a href=<?php echo "tronadura"?>><i class="menu-icon fa fa-clipboard"></i><?php echo "Tronadura"?></a>
@@ -210,7 +210,7 @@
 					<div class="card">
 						<div class="card-header">
 							<strong class="card-title"><?php echo "Cronograma"; ?></strong>
-							<button onclick="window.location.href='/MinetoPlant/Planificador/editar'" type="button" class="btn btn-primary"><?php echo "Editar"?></button>
+							<button onclick="window.location.href='/Gestimine2/Planificador/editar'" type="button" class="btn btn-primary" style="float:right"><?php echo "Editar"?></button>
 						</div>
 						<div class="card-body">
 							<table class="table">
@@ -335,7 +335,7 @@
 					<div class="card">
 						<div class="card-header">
 							<strong class="card-title"><?php echo "Módulo 1"; ?></strong>
-							<button onclick="window.location.href='/MinetoPlant/Planificador/editar'" type="button" class="btn btn-primary"><?php echo "Editar"?></button>
+							<button onclick="window.location.href='/Gestimine2/Planificador/editar'" type="button" class="btn btn-primary"><?php echo "Editar"?></button>
 						</div>
 						<div class="card-body">
 							<table class="table">
@@ -594,7 +594,7 @@
 					<div class="card">
 						<div class="card-header">
 							<strong class="card-title"><?php echo "Producción"; ?></strong>
-							<button onclick="window.location.href='/MinetoPlant/Planificador/editar'" type="button" class="btn btn-primary"><?php echo "Editar"?></button>
+							<button onclick="window.location.href='/Gestimine2/Planificador/editar'" type="button" class="btn btn-primary"><?php echo "Editar"?></button>
 						</div>
 						<div class="card-body">
 							<table class="table">
@@ -657,7 +657,7 @@
 								</tr>
 								<tr>
 									<th scope="row">6</th>
-									<td>><?php echo "Batea A"; ?></td>
+									<td><?php echo "Batea A"; ?></td>
 									<td>the Bird</td>
 									<td>@twitter</td>
 									<td>@mdo</td>
@@ -668,7 +668,7 @@
 								</tr>
 								<tr>
 									<th scope="row">7</th>
-									<td>><?php echo "Batea B"; ?></td>
+									<td><?php echo "Batea B"; ?></td>
 									<td>the Bird</td>
 									<td>@twitter</td>
 									<td>@mdo</td>
@@ -679,7 +679,7 @@
 								</tr>
 								<tr>
 									<th scope="row">8</th>
-									<td>><?php echo "Pilares"; ?></td>
+									<td><?php echo "Pilares"; ?></td>
 									<td>the Bird</td>
 									<td>@twitter</td>
 									<td>@mdo</td>
@@ -690,7 +690,7 @@
 								</tr>
 								<tr>
 									<th scope="row">8</th>
-									<td>><?php echo "Mo. 3"; ?></td>
+									<td><?php echo "Mo. 3"; ?></td>
 									<td>the Bird</td>
 									<td>@twitter</td>
 									<td>@mdo</td>
@@ -701,7 +701,7 @@
 								</tr>
 								<tr>
 									<th scope="row">8</th>
-									<td>><?php echo "Batea A"; ?></td>
+									<td><?php echo "Batea A"; ?></td>
 									<td>the Bird</td>
 									<td>@twitter</td>
 									<td>@mdo</td>
@@ -712,7 +712,7 @@
 								</tr>
 								<tr>
 									<th scope="row">8</th>
-									<td>><?php echo "Batea B"; ?></td>
+									<td><?php echo "Batea B"; ?></td>
 									<td>the Bird</td>
 									<td>@twitter</td>
 									<td>@mdo</td>
@@ -723,7 +723,7 @@
 								</tr>
 								<tr>
 									<th scope="row">8</th>
-									<td>><?php echo "Pilares"; ?></td>
+									<td><?php echo "Pilares"; ?></td>
 									<td>the Bird</td>
 									<td>@twitter</td>
 									<td>@mdo</td>

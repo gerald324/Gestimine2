@@ -1,5 +1,5 @@
 <?php
-	defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') OR exit('No direct script access allowed');
 ?><!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
@@ -42,6 +42,25 @@
 				<li>
 					<a href="alertas"><i class="menu-icon fa fa-exclamation-triangle"></i>Alertas </a>
 				</li><!--Esto redirecciona al aviso de alerta-->
+				<li>
+					<a href=<?php echo "cronograma"?>><i class="menu-icon fa fa-clipboard"></i><?php echo "Cronograma"?></a>
+				</li>
+				<li>
+					<a href=<?php echo "plan_minero"?>><i class="menu-icon fa fa-clipboard"></i><?php echo "Plan Minero"?></a>
+				</li>
+				<li>
+					<a href=<?php echo "perforacion"?>><i class="menu-icon fa fa-clipboard"></i><?php echo "Perforación"?></a>
+				</li>
+				<li>
+					<a href=<?php echo "tronadura"?>><i class="menu-icon fa fa-clipboard"></i><?php echo "Tronadura"?></a>
+				</li>
+				<li>
+					<a href=<?php echo "carguio"?>><i class="menu-icon fa fa-clipboard"></i><?php echo "Carguío"?></a>
+				</li>
+				<li>
+					<a href=<?php echo "transporte"?>><i class="menu-icon fa fa-clipboard"></i><?php echo "Transporte"?></a>
+				</li>
+
 			</ul>
 		</div><!-- /.navbar-collapse -->
 	</nav>
@@ -156,42 +175,42 @@
 		</div>
 	</header><!-- /header -->
 	<!-- Header-->
-<!--
-	<div class="breadcrumbs">
-		<div class="breadcrumbs-inner">
-			<div class="row m-0">
-				<div class="col-sm-4">
-					<div class="page-header float-left">
-						<div class="page-title">
-							<h1>Dashboard</h1>
+	<!--
+		<div class="breadcrumbs">
+			<div class="breadcrumbs-inner">
+				<div class="row m-0">
+					<div class="col-sm-4">
+						<div class="page-header float-left">
+							<div class="page-title">
+								<h1>Dashboard</h1>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-sm-8">
-					<div class="page-header float-right">
-						<div class="page-title">
-							<ol class="breadcrumb text-right">
-								<li><a href="#">Dashboard</a></li>
-								<li><a href="#">Table</a></li>
-								<li class="active">Basic table</li>
-							</ol>
+					<div class="col-sm-8">
+						<div class="page-header float-right">
+							<div class="page-title">
+								<ol class="breadcrumb text-right">
+									<li><a href="#">Dashboard</a></li>
+									<li><a href="#">Table</a></li>
+									<li class="active">Basic table</li>
+								</ol>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
--->
+	-->
 	<div class="content">
 		<div class="animated fadeIn">
 			<div class="row">
-
 
 				<!-- NO BORRAR LO QUE SIGUE----------------------------------------------------------------------------------------------------------------------------------------->
 				<div class="col-lg-12">
 					<div class="card">
 						<div class="card-header">
-							<strong class="card-title">Cronograma</strong>
+							<strong class="card-title"><?php echo "Plan Minero"; ?></strong>
+							<button onclick="window.location.href='/Gestimine2/Planificador/editar'" type="button" class="btn btn-primary" style="float:right"><?php echo "Editar"?></button>
 						</div>
 						<div class="card-body">
 							<table class="table">
@@ -311,9 +330,420 @@
 					</div>
 				</div>
 				<!-- NO BORRAR LO DE ARRIBA --------------------------------------------------------------------------------------------------------------------------------------------------->
+				<?php /*LO DE MÁS ABAJO: MODULO*/?>
+				<div class="col-lg-12">
+					<div class="card">
+						<div class="card-header">
+							<strong class="card-title"><?php echo "Módulo 1"; ?></strong>
+							<button onclick="window.location.href='/Gestimine2/Planificador/editar'" type="button" class="btn btn-primary"><?php echo "Editar"?></button>
+						</div>
+						<div class="card-body">
+							<table class="table">
+								<?php /*<thead class="thead-dark">
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">Infraestructura</th>
+									<th scope="col">Sección</th>
+									<th scope="col">Área</th>
+									<th scope="col">Total</th>
+									<th scope="col">Año 1</th>
+									<th scope="col">Año 2</th>
+									<th scope="col">Año 3</th>
+									<th scope="col">Total</th>
+								</tr>
+								</thead>*/
+								?>
+								<tbody>
+								<tr>
+									<th scope="row">1</th>
+									<td><?php echo "Galería Undercut A"; ?></td>
+									<td>5x5</td>
+									<td>25</td>
+									<td>5000</td>
+									<td>4500</td>
+									<td>500</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<th scope="row">2</th>
+									<td><?php echo "Galería Undercut B"; ?></td>
+									<td>5x5</td>
+									<td>25</td>
+									<td>4000</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<th scope="row">3</th>
+									<td><?php echo "Gal. Perforación A1"; ?></td>
+									<td>5x5</td>
+									<td>25</td>
+									<td>300</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
 
+								</tr>
+								<tr>
+									<th scope="row">4</th>
+									<td><?php echo "Galería Undercut A2"; ?></td>
+									<td>the Bird</td>
+									<td>@twitter</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<th scope="row">5</th>
+									<td><?php echo "Galería Undercut B1"; ?></td>
+									<td>the Bird</td>
+									<td>@twitter</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<th scope="row">6</th>
+									<td><?php echo "Galería Undercut B2"; ?></td>
+									<td>the Bird</td>
+									<td>@twitter</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<th scope="row">7</th>
+									<td><?php echo "Galería Producción"; ?></td>
+									<td>the Bird</td>
+									<td>@twitter</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<th scope="row">8</th>
+									<td><?php echo "Estocada Carguío 1"; ?></td>
+									<td>the Bird</td>
+									<td>@twitter</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<th scope="row">8</th>
+									<td><?php echo "Estocada Carguío 2"; ?></td>
+									<td>the Bird</td>
+									<td>@twitter</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<th scope="row">8</th>
+									<td><?php echo "Estocada Carguío 3"; ?></td>
+									<td>the Bird</td>
+									<td>@twitter</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<th scope="row">8</th>
+									<td><?php echo "Estocada Carguío Etc."; ?></td>
+									<td>the Bird</td>
+									<td>@twitter</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<th scope="row">8</th>
+									<td><?php echo "Chimenea Cara Libre A"; ?></td>
+									<td>the Bird</td>
+									<td>@twitter</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<th scope="row">8</th>
+									<td><?php echo "Chimenea Cara Libre B"; ?></td>
+									<td>the Bird</td>
+									<td>@twitter</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<th scope="row">8</th>
+									<td><?php echo "Estocada Cara Libre A"; ?></td>
+									<td>the Bird</td>
+									<td>@twitter</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<th scope="row">8</th>
+									<td><?php echo "Estocada Cara Libre B"; ?></td>
+									<td>the Bird</td>
+									<td>@twitter</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<th scope="row">8</th>
+									<td><?php echo "Gal. Cara Libre A1"; ?></td>
+									<td>the Bird</td>
+									<td>@twitter</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<th scope="row">8</th>
+									<td><?php echo "Gal. Cara Libre A2"; ?></td>
+									<td>the Bird</td>
+									<td>@twitter</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<th scope="row">8</th>
+									<td><?php echo "Gal. Cara Libre B1"; ?></td>
+									<td>the Bird</td>
+									<td>@twitter</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<th scope="row">8</th>
+									<td><?php echo "Gal. Cara Libre B2"; ?></td>
+									<td>the Bird</td>
+									<td>@twitter</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+								</tr>
+								</tbody>
+							</table>
 
+						</div>
+					</div>
+				</div>
+				<?php /*FIN DE MODULO
+				Generar más módulos segun existan más módulos en base de datos
+ 				Generarlos antes de los totales de abajo
+ 				*/?>
+				<div class="col-lg-12">
+					<div class="card">
+						<div class="card-body">
+							<table class="table">
+								<tr>
+									<th scope="row"> </th>
+									<td>Total</td>
+									<td>	</td>
+									<td>	</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
 
+				<?php /*PRODUCCION*/?>
+				<div class="col-lg-12">
+					<div class="card">
+						<div class="card-header">
+							<strong class="card-title"><?php echo "Producción"; ?></strong>
+							<button onclick="window.location.href='/Gestimine2/Planificador/editar'" type="button" class="btn btn-primary"><?php echo "Editar"?></button>
+						</div>
+						<div class="card-body">
+							<table class="table">
+								<tbody>
+								<tr>
+									<th scope="row">1</th>
+									<td><?php echo "Mo. 1"; ?></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<th scope="row">2</th>
+									<td><?php echo "Batea A"; ?></td>
+									<td>5x5</td>
+									<td>25</td>
+									<td>4000</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<th scope="row">3</th>
+									<td><?php echo "Batea B"; ?></td>
+									<td>5x5</td>
+									<td>25</td>
+									<td>300</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+
+								</tr>
+								<tr>
+									<th scope="row">4</th>
+									<td><?php echo "Pilares"; ?></td>
+									<td>the Bird</td>
+									<td>@twitter</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<th scope="row">5</th>
+									<td><?php echo "Mo. 2"; ?></td>
+									<td>the Bird</td>
+									<td>@twitter</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<th scope="row">6</th>
+									<td><?php echo "Batea A"; ?></td>
+									<td>the Bird</td>
+									<td>@twitter</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<th scope="row">7</th>
+									<td><?php echo "Batea B"; ?></td>
+									<td>the Bird</td>
+									<td>@twitter</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<th scope="row">8</th>
+									<td><?php echo "Pilares"; ?></td>
+									<td>the Bird</td>
+									<td>@twitter</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<th scope="row">8</th>
+									<td><?php echo "Mo. 3"; ?></td>
+									<td>the Bird</td>
+									<td>@twitter</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<th scope="row">8</th>
+									<td><?php echo "Batea A"; ?></td>
+									<td>the Bird</td>
+									<td>@twitter</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<th scope="row">8</th>
+									<td><?php echo "Batea B"; ?></td>
+									<td>the Bird</td>
+									<td>@twitter</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<th scope="row">8</th>
+									<td><?php echo "Pilares"; ?></td>
+									<td>the Bird</td>
+									<td>@twitter</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<th scope="row"> </th>
+									<td>Total</td>
+									<td>	</td>
+									<td>	</td>
+								</tr>
+								</tbody>
+							</table>
+
+						</div>
+					</div>
+				</div>
 
 			</div>
 		</div><!-- .animated -->
@@ -348,4 +778,3 @@
 
 </body>
 </html>
-
