@@ -8,7 +8,7 @@ class Planificador extends CI_Controller{
 		$content_data = array(
 			'usuarios' => $datos['Usuarios']
 		);
-		$this->load->view('planificador_inicio.php');
+		$this->load->view('planificador_datos_mina.php');
 	}
 
 	public function plan_minero(){

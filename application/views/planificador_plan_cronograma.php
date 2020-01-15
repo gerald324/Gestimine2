@@ -37,31 +37,28 @@
 		<div id="main-menu" class="main-menu collapse navbar-collapse">
 			<ul class="nav navbar-nav">
 				<li>
-					<a href="index"><i class="menu-icon fa fa-laptop"></i>Dashboard </a>
-				</li>
-				<li>
-					<a href="alertas"><i class="menu-icon fa fa-exclamation-triangle"></i>Alertas </a>
-				</li><!--Esto redirecciona al aviso de alerta-->
-				<li>
-					<a href=<?php echo "cronograma"?>><i class="menu-icon fa fa-clipboard"></i><?php echo "Cronograma"?></a>
-				</li>
-				<li>
-					<a href=<?php echo "plan_minero"?>><i class="menu-icon fa fa-clipboard"></i><?php echo "Plan Minero"?></a>
-				</li>
-				<li>
-					<a href=<?php echo "perforacion"?>><i class="menu-icon fa fa-clipboard"></i><?php echo "Perforación"?></a>
-				</li>
-				<li>
-					<a href=<?php echo "tronadura"?>><i class="menu-icon fa fa-clipboard"></i><?php echo "Tronadura"?></a>
-				</li>
-				<li>
-					<a href=<?php echo "carguio"?>><i class="menu-icon fa fa-clipboard"></i><?php echo "Carguío"?></a>
-				</li>
-				<li>
-					<a href=<?php echo "transporte"?>><i class="menu-icon fa fa-clipboard"></i><?php echo "Transporte"?></a>
-				</li>
-				<li>
 					<a href=<?php echo "datos_mina"?>><i class="menu-icon fa fa-clipboard"></i><?php echo "Datos de Mina"?></a>
+				</li>
+				<li>
+					<a href=<?php echo "cronograma"?>><i class="menu-icon fa fa-calendar"></i><?php echo "Cronograma"?></a>
+				</li>
+				<li>
+					<a href=<?php echo "plan_minero"?>><i class="menu-icon fa fa-book"></i><?php echo "Plan Minero"?></a>
+				</li>
+				<li>
+					<a href=<?php echo "perforacion"?>><i class="menu-icon fa fa-level-down"></i><?php echo "Perforación"?></a>
+				</li>
+				<li>
+					<a href=<?php echo "tronadura"?>><i class="menu-icon fa fa-magic"></i><?php echo "Tronadura"?></a>
+				</li>
+				<li>
+					<a href=<?php echo "carguio"?>><i class="menu-icon fa fa-truck"></i><?php echo "Carguío"?></a>
+				</li>
+				<li>
+					<a href=<?php echo "transporte"?>><i class="menu-icon fa fa-road"></i><?php echo "Transporte"?></a>
+				</li>
+				<li>
+					<a href=<?php echo "alertas"?>><i class="menu-icon fa fa-exclamation-triangle"></i><?php echo "Alertas"?></a>
 				</li>
 
 			</ul>

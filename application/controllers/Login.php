@@ -51,7 +51,7 @@ class Login extends CI_Controller{
 				exit;
 			}
 			else if($rol_usuario['rol'] == 'Planificador'){
-				echo json_encode(array('url' => base_url('Planificador/plan_minero')));
+				echo json_encode(array('url' => base_url('Planificador/index')));
 				exit;
 			}
 			echo json_encode(array('msg' => 'Ninguno'));
