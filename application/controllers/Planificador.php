@@ -13,9 +13,9 @@ class Planificador extends CI_Controller{
 
 	public function plan_minero(){
 		$this->load->model('PlanMinero_model','UM',true);
-		$datos['tuneles']=$this->UM->getAll();
+		$datos['Tuneles']=$this->UM->getAll();
 		$content_data = array(
-			'tuneles' => $datos['PlanMinero']
+			'tuneles' => $datos['Tuneles']
 		);
 		$this->load->view('planificador_plan_minero.php',$content_data);
 	}
