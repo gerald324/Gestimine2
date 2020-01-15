@@ -50,6 +50,10 @@ class Login extends CI_Controller{
 				echo json_encode(array('url' => base_url($segmentos_url)));
 				exit;
 			}
+			else if($rol_usuario['rol'] == 'Planificador'){
+				echo json_encode(array('url' => base_url('Planificador/plan_minero')));
+				exit;
+			}
 			echo json_encode(array('msg' => 'Ninguno'));
 			$this->output->set_status_header(401);
 
