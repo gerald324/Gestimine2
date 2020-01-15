@@ -138,7 +138,14 @@
 					<thead>
 					<tr>
 						<th>Túnel</th>
-						<th>Avance en metros planificado para este turno</th>
+						<?php foreach( $tareas_turno as $parametros ) : ?>
+							<?php if ($parametros['rol'] == "Perforador" or $parametros['rol'] == "Tronador") { ?>
+								<th>Avance en metros planificado para este turno</th>
+							<?php } elseif ($parametros['rol'] == "Transporte" or $parametros['rol'] == "Carguero") { ?>
+								<th>Total de toneladas planificadas para este turno</th>
+							<?php } ?>
+						<?php endforeach; ?>
+
 					</tr>
 					</thead>
 					<tbody>
