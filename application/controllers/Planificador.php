@@ -12,12 +12,12 @@ class Planificador extends CI_Controller{
 	}
 
 	public function plan_minero(){
-		$this->load->model('Usuarios_model','UM',true);
-		$datos['Usuarios']=$this->UM->getAll();
+		$this->load->model('PlanMinero_model','UM',true);
+		$datos['tuneles']=$this->UM->getAll();
 		$content_data = array(
-			'usuarios' => $datos['Usuarios']
+			'tuneles' => $datos['PlanMinero']
 		);
-		$this->load->view('planificador_plan_minero.php');
+		$this->load->view('planificador_plan_minero.php',$content_data);
 	}
 
 	public function carguio(){
