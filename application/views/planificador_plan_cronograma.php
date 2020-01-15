@@ -335,7 +335,7 @@
 					<div class="card">
 						<div class="card-header">
 							<strong class="card-title"><?php echo "Módulo 1"; ?></strong>
-							<button onclick="window.location.href='/Gestimine2/Planificador/editar'" type="button" class="btn btn-primary"><?php echo "Editar"?></button>
+							<button onclick="window.location.href='/Gestimine2/Planificador/editar'" type="button" class="btn btn-primary" style="float:right"><?php echo "Editar"?></button>
 						</div>
 						<div class="card-body">
 							<table class="table">
@@ -594,7 +594,7 @@
 					<div class="card">
 						<div class="card-header">
 							<strong class="card-title"><?php echo "Producción"; ?></strong>
-							<button onclick="window.location.href='/Gestimine2/Planificador/editar'" type="button" class="btn btn-primary"><?php echo "Editar"?></button>
+							<button onclick="window.location.href='/Gestimine2/Planificador/editar'" type="button" class="btn btn-primary" style="float:right"><?php echo "Editar"?></button>
 						</div>
 						<div class="card-body">
 							<table class="table">
