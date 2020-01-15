@@ -212,13 +212,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<div class="col-lg-12">
 					<div class="card">
 						<div class="card-header">
-							<strong class="card-title"><?php echo "Trnasporte"; ?></strong>
+							<strong class="card-title"><?php echo "Datos de Mina"; ?></strong>
 							<button onclick="window.location.href='/Gestimine2/Planificador/editar'" type="button" class="btn btn-primary" style="float:right"><?php echo "Editar"?></button>
 						</div>
 						<div class="card-body">
 							<table class="table">
-								<thead class="thead-dark">
-								<tr>
+								<!--thead class="thead-dark">
+								<?php /*<tr>
 									<th scope="col">#</th>
 									<th scope="col">Infraestructura</th>
 									<th scope="col">Sección</th>
@@ -228,103 +228,44 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									<th scope="col">Año 2</th>
 									<th scope="col">Año 3</th>
 									<th scope="col">Total</th>
-								</tr>
-								</thead>
+								</tr-->*/ ;?>
+								</thead-->
 								<tbody>
 								<tr>
 									<th scope="row">1</th>
-									<td>Rampa de Acceso</td>
-									<td>5x5</td>
-									<td>25</td>
-									<td>5000</td>
-									<td>4500</td>
-									<td>500</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
+									<td><?php echo "Densidad Estéril"?></td>
+									<td><?php echo "2.7"?></td>
+									<td><?php echo "t/m3"?></td>
 								</tr>
 								<tr>
 									<th scope="row">2</th>
-									<td>Nivel de Transporte</td>
-									<td>5x5</td>
-									<td>25</td>
-									<td>4000</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
+									<td><?php echo "Densidad Mineral"?></td>
+									<td><?php echo "2.8"?></td>
+									<td><?php echo "t/m3"?></td>
 								</tr>
 								<tr>
 									<th scope="row">3</th>
-									<td>Estocadas Vent. Ppal.</td>
-									<td>5x5</td>
-									<td>25</td>
-									<td>300</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-
+									<td><?php echo "Densidad con Dilusión"?></td>
+									<td><?php echo "2.4"?></td>
+									<td><?php echo "t/m3"?></td>
 								</tr>
 								<tr>
 									<th scope="row">4</th>
-									<td>Estocadas Vent. Sec.</td>
-									<td>the Bird</td>
-									<td>@twitter</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
+									<td><?php echo "Ley Estéril"?></td>
+									<td><?php echo "0.2"?></td>
+									<td><?php echo "%"?></td>
 								</tr>
 								<tr>
 									<th scope="row">5</th>
-									<td>Piques de Vent. Ppal.</td>
-									<td>the Bird</td>
-									<td>@twitter</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
+									<td><?php echo "Ley Mineral"?></td>
+									<td><?php echo "0.7"?></td>
+									<td><?php echo "%"?></td>
 								</tr>
 								<tr>
 									<th scope="row">6</th>
-									<td>Piques de Vent. Sec.</td>
-									<td>the Bird</td>
-									<td>@twitter</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-								</tr>
-								<tr>
-									<th scope="row">7</th>
-									<td>Desquinche de Carguío</td>
-									<td>the Bird</td>
-									<td>@twitter</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-								</tr>
-								<tr>
-									<th scope="row">8</th>
-									<td>Estocadas de Maniobra</td>
-									<td>the Bird</td>
-									<td>@twitter</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-								</tr>
-								<tr>
-									<th scope="row"> </th>
-									<td>Total</td>
-									<td>	</td>
-									<td>	</td>
+									<td><?php echo "Ley Diluída"?></td>
+									<td><?php echo "0.5"?></td>
+									<td><?php echo "%"?></td>
 								</tr>
 								</tbody>
 							</table>
@@ -337,7 +278,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<div class="col-lg-12">
 					<div class="card">
 						<div class="card-header">
-							<strong class="card-title"><?php echo "Módulo 1"; ?></strong>
+							<!--strong class="card-title"><?php echo "Módulo 1"; ?></strong-->
 							<button onclick="window.location.href='/Gestimine2/Planificador/editar'" type="button" class="btn btn-primary" style="float:right"><?php echo "Editar"?></button>
 						</div>
 						<div class="card-body">
@@ -359,213 +300,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<tbody>
 								<tr>
 									<th scope="row">1</th>
-									<td><?php echo "Galería Undercut A"; ?></td>
-									<td>5x5</td>
-									<td>25</td>
-									<td>5000</td>
-									<td>4500</td>
-									<td>500</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
+									<td><?php echo "Mineral Recuperado de los Módulos"; ?></td>
+									<td><?php echo " "?></td>
+									<td><?php echo " "?></td>
 								</tr>
 								<tr>
 									<th scope="row">2</th>
-									<td><?php echo "Galería Undercut B"; ?></td>
-									<td>5x5</td>
-									<td>25</td>
-									<td>4000</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
+									<td><?php echo "Mineral Recuperado de los Pilares"; ?></td>
+									<td><?php echo " "?></td>
+									<td><?php echo "t"?></td>
 								</tr>
 								<tr>
-									<th scope="row">3</th>
-									<td><?php echo "Gal. Perforación A1"; ?></td>
-									<td>5x5</td>
-									<td>25</td>
-									<td>300</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-
-								</tr>
-								<tr>
-									<th scope="row">4</th>
-									<td><?php echo "Galería Undercut A2"; ?></td>
-									<td>the Bird</td>
-									<td>@twitter</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-								</tr>
-								<tr>
-									<th scope="row">5</th>
-									<td><?php echo "Galería Undercut B1"; ?></td>
-									<td>the Bird</td>
-									<td>@twitter</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-								</tr>
-								<tr>
-									<th scope="row">6</th>
-									<td><?php echo "Galería Undercut B2"; ?></td>
-									<td>the Bird</td>
-									<td>@twitter</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-								</tr>
-								<tr>
-									<th scope="row">7</th>
-									<td><?php echo "Galería Producción"; ?></td>
-									<td>the Bird</td>
-									<td>@twitter</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-								</tr>
-								<tr>
-									<th scope="row">8</th>
-									<td><?php echo "Estocada Carguío 1"; ?></td>
-									<td>the Bird</td>
-									<td>@twitter</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-								</tr>
-								<tr>
-									<th scope="row">8</th>
-									<td><?php echo "Estocada Carguío 2"; ?></td>
-									<td>the Bird</td>
-									<td>@twitter</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-								</tr>
-								<tr>
-									<th scope="row">8</th>
-									<td><?php echo "Estocada Carguío 3"; ?></td>
-									<td>the Bird</td>
-									<td>@twitter</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-								</tr>
-								<tr>
-									<th scope="row">8</th>
-									<td><?php echo "Estocada Carguío Etc."; ?></td>
-									<td>the Bird</td>
-									<td>@twitter</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-								</tr>
-								<tr>
-									<th scope="row">8</th>
-									<td><?php echo "Chimenea Cara Libre A"; ?></td>
-									<td>the Bird</td>
-									<td>@twitter</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-								</tr>
-								<tr>
-									<th scope="row">8</th>
-									<td><?php echo "Chimenea Cara Libre B"; ?></td>
-									<td>the Bird</td>
-									<td>@twitter</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-								</tr>
-								<tr>
-									<th scope="row">8</th>
-									<td><?php echo "Estocada Cara Libre A"; ?></td>
-									<td>the Bird</td>
-									<td>@twitter</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-								</tr>
-								<tr>
-									<th scope="row">8</th>
-									<td><?php echo "Estocada Cara Libre B"; ?></td>
-									<td>the Bird</td>
-									<td>@twitter</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-								</tr>
-								<tr>
-									<th scope="row">8</th>
-									<td><?php echo "Gal. Cara Libre A1"; ?></td>
-									<td>the Bird</td>
-									<td>@twitter</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-								</tr>
-								<tr>
-									<th scope="row">8</th>
-									<td><?php echo "Gal. Cara Libre A2"; ?></td>
-									<td>the Bird</td>
-									<td>@twitter</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-								</tr>
-								<tr>
-									<th scope="row">8</th>
-									<td><?php echo "Gal. Cara Libre B1"; ?></td>
-									<td>the Bird</td>
-									<td>@twitter</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-								</tr>
-								<tr>
-									<th scope="row">8</th>
-									<td><?php echo "Gal. Cara Libre B2"; ?></td>
-									<td>the Bird</td>
-									<td>@twitter</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
+									<th scope="row">2</th>
+									<td><?php echo "Ritmo de Extracción"; ?></td>
+									<td><?php echo " "?></td>
+									<td><?php echo "t/día"?></td>
 								</tr>
 								</tbody>
 							</table>
@@ -581,11 +330,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<div class="card">
 						<div class="card-body">
 							<table class="table">
+								<thead class="thead-dark">
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col"><?php echo "Perforación"?></th>
+								</tr>
+								</thead>
 								<tr>
 									<th scope="row"> </th>
-									<td>Total</td>
-									<td>	</td>
-									<td>	</td>
+									<td><?php echo "Profundidad del tiro"?></td>
+									<td><?php echo "3.2"?></td>
+									<td><?php echo "m."?></td>
 								</tr>
 							</table>
 						</div>
@@ -604,142 +359,38 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<tbody>
 								<tr>
 									<th scope="row">1</th>
-									<td><?php echo "Mo. 1"; ?></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
+									<td><?php echo "25"; ?></td>
+									<td><?php echo "m2"; ?></td>
+									<td><?php echo "25"; ?></td>
+									<td><?php echo "Cantida de perforaciones"; ?></td>
 								</tr>
 								<tr>
 									<th scope="row">2</th>
-									<td><?php echo "Batea A"; ?></td>
-									<td>5x5</td>
-									<td>25</td>
-									<td>4000</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
+									<td><?php echo "16"; ?></td>
+									<td><?php echo "m2"; ?></td>
+									<td><?php echo "25"; ?></td>
+									<td><?php echo "cantidad de perforaciones"; ?></td>
 								</tr>
 								<tr>
 									<th scope="row">3</th>
-									<td><?php echo "Batea B"; ?></td>
-									<td>5x5</td>
-									<td>25</td>
-									<td>300</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-
+									<td><?php echo "9"; ?></td>
+									<td><?php echo "m2"; ?></td>
+									<td><?php echo "13"; ?></td>
+									<td><?php echo "cantidad de perforaciones"; ?></td>
 								</tr>
 								<tr>
 									<th scope="row">4</th>
-									<td><?php echo "Pilares"; ?></td>
-									<td>the Bird</td>
-									<td>@twitter</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
+									<td><?php echo "6.25"; ?></td>
+									<td><?php echo "m2"; ?></td>
+									<td><?php echo "8"; ?></td>
+									<td><?php echo "cantidad de perforaciones"; ?></td>
 								</tr>
 								<tr>
 									<th scope="row">5</th>
-									<td><?php echo "Mo. 2"; ?></td>
-									<td>the Bird</td>
-									<td>@twitter</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-								</tr>
-								<tr>
-									<th scope="row">6</th>
-									<td><?php echo "Batea A"; ?></td>
-									<td>the Bird</td>
-									<td>@twitter</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-								</tr>
-								<tr>
-									<th scope="row">7</th>
-									<td><?php echo "Batea B"; ?></td>
-									<td>the Bird</td>
-									<td>@twitter</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-								</tr>
-								<tr>
-									<th scope="row">8</th>
-									<td><?php echo "Pilares"; ?></td>
-									<td>the Bird</td>
-									<td>@twitter</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-								</tr>
-								<tr>
-									<th scope="row">8</th>
-									<td><?php echo "Mo. 3"; ?></td>
-									<td>the Bird</td>
-									<td>@twitter</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-								</tr>
-								<tr>
-									<th scope="row">8</th>
-									<td><?php echo "Batea A"; ?></td>
-									<td>the Bird</td>
-									<td>@twitter</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-								</tr>
-								<tr>
-									<th scope="row">8</th>
-									<td><?php echo "Batea B"; ?></td>
-									<td>the Bird</td>
-									<td>@twitter</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-								</tr>
-								<tr>
-									<th scope="row">8</th>
-									<td><?php echo "Pilares"; ?></td>
-									<td>the Bird</td>
-									<td>@twitter</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-									<td>@mdo</td>
-								</tr>
-								<tr>
-									<th scope="row"> </th>
-									<td>Total</td>
-									<td>	</td>
-									<td>	</td>
+									<td><?php echo "26"; ?></td>
+									<td><?php echo "m2"; ?></td>
+									<td><?php echo "27"; ?></td>
+									<td><?php echo "cantidad de perforaciones"; ?></td>
 								</tr>
 								</tbody>
 							</table>
@@ -781,4 +432,3 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 </body>
 </html>
-

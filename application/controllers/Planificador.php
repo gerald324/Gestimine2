@@ -65,6 +65,15 @@ class Planificador extends CI_Controller{
 		$this->load->view('planificador_plan_tronadura.php');
 	}
 
+	public function datos_mina(){
+		$this->load->model('Usuarios_model','UM',true);
+		$datos['Usuarios']=$this->UM->getAll();
+		$content_data = array(
+			'usuarios' => $datos['Usuarios']
+		);
+		$this->load->view('planificador_datos_mina.php');
+	}
+
 	public function alertas(){
 		$this->load->model('Usuarios_model','UM',true);
 		$datos['Usuarios']=$this->UM->getAll();

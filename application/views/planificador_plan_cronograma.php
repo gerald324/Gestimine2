@@ -60,6 +60,9 @@
 				<li>
 					<a href=<?php echo "transporte"?>><i class="menu-icon fa fa-clipboard"></i><?php echo "Transporte"?></a>
 				</li>
+				<li>
+					<a href=<?php echo "datos_mina"?>><i class="menu-icon fa fa-clipboard"></i><?php echo "Datos de Mina"?></a>
+				</li>
 
 			</ul>
 		</div><!-- /.navbar-collapse -->
