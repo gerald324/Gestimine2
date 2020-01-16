@@ -146,7 +146,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									<th>Nombre</th>
 									<th>Rol</th>
 									<th>Módulo</th>
-									<th>Sector</th>
+									<?php /*<th>Sector</th>*/; ?>
 								</tr>
 								</thead>
 								<tbody>
