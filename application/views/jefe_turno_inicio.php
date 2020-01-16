@@ -133,15 +133,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="animated fadeIn">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="card">
+						<form method="POST" action="<?= base_url('Jefe_turno/update')?>">
+						<div class="card">
                             <div class="card-header">
                                 <strong class="card-title">Tareas del Turno</strong>
+								<input type="submit" class="btn btn-primary" style="float:right"><?php echo "Ingresar Avance"?>
                             </div>
                             <div class="card-body">
                                 <table class="table table-bordered table-striped">
                                     <thead class="thead-dark">
                                         <tr>
-                                            <th scope="col">Infraestructura</th>
+                                            <th scope="col">Id Tunel</th>
+											<th scope="col">Infraestructura</th>
                                             <th scope="col">Sección</th>
                                             <th scope="col">Área</th>
                                             <th scope="col">Total turno [m]</th>
@@ -151,17 +154,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <tbody>
 									<?php foreach( $tareas_jefeturno as $parametros ) : ?>
 									<tr>
+										<td><input type="text" name="id[]" value="<?php echo $parametros['id'] ?>" readonly></td>
 										<td><?php echo $parametros['nombre'] ?></td>
 										<td><?php echo $parametros['seccion'] ?></td>
 										<td><?php echo $parametros['area'] ?></td>
 										<td><?php echo $parametros['avance_req'] ?></td>
-										<td><?php echo $parametros['avance_real'] ?></td>
+										<td><input type="text" name="avance_real[]" value="<?php echo $parametros['avance_real'] ?>"></td>
 										<?php endforeach; ?>
 
 									</tbody>
                                 </table>
                             </div>
                         </div>
+						</form>
                     </div>
 
         </div>

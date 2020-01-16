@@ -10,5 +10,12 @@ class JefeTurno_Model extends CI_Model {
 
 		return $result;
 	}
+
+	public function updateAvance($id, $id_tunel, $datos){
+		$this->db->where('id_tunel',$id_tunel);
+		$this->db->where('id_turno', $id);
+		$this->db->update('tunel_asignada',$datos);
+	}
+
 }
 ?>

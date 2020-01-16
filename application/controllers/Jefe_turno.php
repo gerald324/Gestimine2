@@ -45,5 +45,18 @@ class Jefe_turno extends CI_Controller{
 	public function alertas(){
 		$this->load->view('jefe_turno_alerta.php');
 	}
+	public function update(){
+		$this->load->model('JefeTurno_model','UM',true);
+		for($i=0;$i<2;$i++){
+			$avance_real = $_POST['avance_real'][$i];
+			$id = $_POST['id'][$i];
+
+			$datos = array(
+				'avance_real' => $avance_real,
+			);
+			$this->UM->updateAvance($i + 1, $id, $datos);
+		}
+		$this->index();
+	}
 }
 ?>

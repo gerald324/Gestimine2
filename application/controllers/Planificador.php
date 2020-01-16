@@ -144,7 +144,8 @@ class Planificador extends CI_Controller{
 
 	public function update(){
 		$this->load->model('PlanMinero_model','UM',true);
-		for($i=0;$i<5;$i++){
+		$k = $this->UM->getCantTunel();
+		for($i=0;$i<$k;$i++){
 			$seccion = $_POST['seccion'][$i];
 			$area = $_POST['area'][$i];
 			$largo_total = $_POST['largo_total'][$i];

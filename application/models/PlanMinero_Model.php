@@ -22,6 +22,13 @@ class PlanMinero_Model extends CI_Model {
 		return $result;
 	}
 
+	public function getCantTunel(){
+		$query = "SELECT * FROM tunel ";
+		$data = $this->db->query($query);
+		$result = $data->num_rows();
+		return $result;
+	}
+
 	public function updateTunel($id,$datos){
 		$this->db->where('id',$id);
 		$this->db->update('tunel',$datos);
