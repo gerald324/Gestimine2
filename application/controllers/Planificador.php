@@ -13,11 +13,18 @@ class Planificador extends CI_Controller{
 
 	public function plan_minero(){
 		$this->load->model('PlanMinero_model','UM',true);
-		$datos['Tuneles']=$this->UM->getAll();
-		$content_data = array(
-			'tuneles' => $datos['Tuneles']
-		);
-		$this->load->view('planificador_plan_minero.php',$content_data);
+		$data['Tuneles']=$this->UM->getAll();
+
+		$id = '1';
+		$fecha = '2019';
+
+
+			$datos['Tuneles']=$this->UM->getAvanceEnTunel($id, $fecha);
+				$contenido_datos = array(
+					'tunel_avance' => $datos['Tuneles']
+				);
+
+		$this->load->view('planificador_plan_minero.php',$contenido_datos);
 	}
 
 	public function carguio(){
