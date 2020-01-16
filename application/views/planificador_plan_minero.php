@@ -225,6 +225,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									<th scope="col">Año 2</th>
 									<th scope="col">Año 3</th>
 									<th scope="col">Total</th>
+									<th scope="col">Avance</th>
 								</tr>
 								</thead>
 								<tbody>
