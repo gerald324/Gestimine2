@@ -151,9 +151,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <tbody>
 									<?php foreach( $tareas_jefeturno as $parametros ) : ?>
 									<tr>
-										<td><?php echo $parametros['id'] ?></td>
 										<td><?php echo $parametros['nombre'] ?></td>
 										<td><?php echo $parametros['seccion'] ?></td>
+										<td><?php echo $parametros['area'] ?></td>
 										<td><?php echo $parametros['avance_req'] ?></td>
 										<td><?php echo $parametros['avance_real'] ?></td>
 										<?php endforeach; ?>
