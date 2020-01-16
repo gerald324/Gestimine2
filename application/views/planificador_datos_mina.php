@@ -359,35 +359,35 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									<td><?php echo "25"; ?></td>
 									<td><?php echo "m2"; ?></td>
 									<td><?php echo "25"; ?></td>
-									<td><?php echo "Cantida de perforaciones"; ?></td>
+									<td><?php echo "Cantidad de perforaciones"; ?></td>
 								</tr>
 								<tr>
 									<th scope="row">2</th>
 									<td><?php echo "16"; ?></td>
 									<td><?php echo "m2"; ?></td>
 									<td><?php echo "25"; ?></td>
-									<td><?php echo "cantidad de perforaciones"; ?></td>
+									<td><?php echo "Cantidad de perforaciones"; ?></td>
 								</tr>
 								<tr>
 									<th scope="row">3</th>
 									<td><?php echo "9"; ?></td>
 									<td><?php echo "m2"; ?></td>
 									<td><?php echo "13"; ?></td>
-									<td><?php echo "cantidad de perforaciones"; ?></td>
+									<td><?php echo "Cantidad de perforaciones"; ?></td>
 								</tr>
 								<tr>
 									<th scope="row">4</th>
 									<td><?php echo "6.25"; ?></td>
 									<td><?php echo "m2"; ?></td>
 									<td><?php echo "8"; ?></td>
-									<td><?php echo "cantidad de perforaciones"; ?></td>
+									<td><?php echo "Cantidad de perforaciones"; ?></td>
 								</tr>
 								<tr>
 									<th scope="row">5</th>
 									<td><?php echo "26"; ?></td>
 									<td><?php echo "m2"; ?></td>
 									<td><?php echo "27"; ?></td>
-									<td><?php echo "cantidad de perforaciones"; ?></td>
+									<td><?php echo "Cantidad de perforaciones"; ?></td>
 								</tr>
 								</tbody>
 							</table>
