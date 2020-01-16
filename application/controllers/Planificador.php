@@ -117,7 +117,7 @@ class Planificador extends CI_Controller{
 		);
 		$this->load->view('planificador_alerta.php');
 	}
-
+	/*
 	public function editar(){
 		//cambiar modelo por modelo del plan minero
 		$this->load->model('Usuarios_model', 'UM', true);
@@ -126,5 +126,36 @@ class Planificador extends CI_Controller{
 
 		);
 		$this->load->view('editar_plan.php');
+	}*/
+	public function editar(){
+		$this->load->model('PlanMinero_model','UM',true);
+		$data['Tuneles']=$this->UM->getAll();
+
+		$id = '1';
+		$fecha = '2019';
+
+
+		$datos['Tuneles']=$this->UM->getAvanceEnTunel($id, $fecha);
+		$contenido_datos = array(
+			'tunel_avance' => $datos['Tuneles']
+		);
+		$this->load->view('editar_plan.php',$contenido_datos);
+	}
+
+	public function update(){
+		$this->load->model('PlanMinero_model','UM',true);
+		for($i=0;$i<5;$i++){
+			$seccion = $_POST['seccion'][$i];
+			$area = $_POST['area'][$i];
+			$largo_total = $_POST['largo_total'][$i];
+
+			$datos = array(
+				'seccion' => $seccion,
+				'area' => $area,
+				'largo_total' => $largo_total,
+			);
+			$this->UM->updateTunel($i + 1, $datos);
+		}
+		$this->load->view('planificador_datos_mina.php');
 	}
 }
