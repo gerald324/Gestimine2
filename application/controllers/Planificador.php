@@ -46,12 +46,19 @@ class Planificador extends CI_Controller{
 	}
 
 	public function perforacion(){
-		$this->load->model('Usuarios_model','UM',true);
-		$datos['Usuarios']=$this->UM->getAll();
-		$content_data = array(
-			'usuarios' => $datos['Usuarios']
+		$this->load->model('PlanMinero_model','UM',true);
+		$data['Tuneles']=$this->UM->getAll();
+
+		$id = '1';
+		$fecha = '2019';
+
+
+		$datos['Tuneles']=$this->UM->getAvanceEnTunel($id, $fecha);
+		$contenido_datos = array(
+			'tunel_avance' => $datos['Tuneles']
 		);
-		$this->load->view('planificador_plan_perforacion.php');
+
+		$this->load->view('planificador_plan_perforacion.php',$contenido_datos);
 	}
 
 	public function transporte(){
@@ -64,12 +71,19 @@ class Planificador extends CI_Controller{
 	}
 
 	public function tronadura(){
-		$this->load->model('Usuarios_model','UM',true);
-		$datos['Usuarios']=$this->UM->getAll();
-		$content_data = array(
-			'usuarios' => $datos['Usuarios']
+		$this->load->model('PlanMinero_model','UM',true);
+		$data['Tuneles']=$this->UM->getAll();
+
+		$id = '1';
+		$fecha = '2019';
+
+
+		$datos['Tuneles']=$this->UM->getAvanceEnTunel($id, $fecha);
+		$contenido_datos = array(
+			'tunel_avance' => $datos['Tuneles']
 		);
-		$this->load->view('planificador_plan_tronadura.php');
+
+		$this->load->view('planificador_plan_tronadura.php',$contenido_datos);
 	}
 
 	public function datos_mina(){

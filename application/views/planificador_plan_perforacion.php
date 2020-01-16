@@ -228,101 +228,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								</tr>
 								</thead>
 								<tbody>
-								<tr>
-									<th scope="row">1</th>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-								</tr>
-								<tr>
-									<th scope="row">2</th>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-								</tr>
-								<tr>
-									<th scope="row">3</th>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
 
-								</tr>
+
+								<?php foreach( $tunel_avance as $parametros ) : ?>
 								<tr>
-									<th scope="row">4</th>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-								</tr>
-								<tr>
-									<th scope="row">5</th>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-								</tr>
-								<tr>
-									<th scope="row">6</th>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-								</tr>
-								<tr>
-									<th scope="row">7</th>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-								</tr>
-								<tr>
-									<th scope="row">8</th>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-								</tr>
-								<tr>
-									<th scope="row"> </th>
-									<td>Total</td>
-									<td>	</td>
-									<td>	</td>
-								</tr>
+									<td><?php echo $parametros['id_tunel'] ?></td>
+									<td><?php echo $parametros['nombre'] ?></td>
+									<td><?php echo $parametros['seccion'] ?></td>
+									<td><?php echo $parametros['area'] ?></td>
+									<td><?php echo $parametros['largo_total'] ?></td>
+									<td><?php echo $parametros['suma_avance'] ?></td>
+									<?php endforeach; ?>
+
 								</tbody>
 							</table>
 
