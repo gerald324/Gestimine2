@@ -137,7 +137,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<div class="card">
                             <div class="card-header">
                                 <strong class="card-title">Tareas del Turno</strong>
-								<input type="submit" class="btn btn-primary" style="float:right"><?php echo "Ingresar Avance"?>
+								<input type="submit" class="btn btn-primary" style="float:right" value="<?php echo "Ingresar Avance"?>">
                             </div>
                             <div class="card-body">
                                 <table class="table table-bordered table-striped">
