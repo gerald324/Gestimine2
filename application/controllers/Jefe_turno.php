@@ -11,19 +11,15 @@ class Jefe_turno extends CI_Controller{
 	 * Esta es la función predeterminada que se carga al entrar en jefe de turno en el navegador
 	 * */
 	public function index(){
-		//Se carga el modelo y se almacena lo que devuelva en un arreglo
-		$this->load->model('Usuarios_Model','UM',true);
-		$datos['Usuarios']=$this->UM->getAll();
-		/*
-		 * Aqui se eligen los parámetros que se quieren pasar a la vista,
-		 * el arreglo content_data va en cada función que corresponda a una vista
-		 * y se pasa por parámetros en la línea de código donde se llama a la vista
-		 * */
-		//set content data
+		$this->load->model('JefeTurno_Model','UM',true);
+
+		$datos['Tareas']=$this->UM->getTunelesActuales();
+
 		$content_data = array(
-			'usuarios' => $datos['Usuarios']
+			'tareas_jefeturno' => $datos['Tareas']
 		);
-		$this->load->view('jefe_turno_inicio.php');
+
+		$this->load->view('jefe_turno_inicio.php',$content_data);
 	}
 
 	/*

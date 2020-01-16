@@ -149,55 +149,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <th>Rampa de Acceso</th>
-                                            <td>5x5</td>
-                                            <td>25</td>
-                                            <td>7</td>
-                                            <td>
-                                                <div class="input-group">
-                                                    <input type="text" name="ram_acceso" placeholder="" class="form-control">
-                                                    <div class="input-group-btn"><button class="btn btn-primary">actualizar</button></div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>Nivel de Transporte</th>
-                                            <td>5x5</td>
-                                            <td>25</td>
-                                            <td>6</td>
-                                            <td>
-                                                <div class="input-group">
-                                                    <input type="text" name="niv_trans" placeholder="" class="form-control">
-                                                    <div class="input-group-btn"><button class="btn btn-primary">actualizar</button></div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>Estocadas vent. Ppal.</th>
-                                            <td>5x5</td>
-                                            <td>25</td>
-                                            <td>2</td>
-                                            <td>
-                                                <div class="input-group">
-                                                    <input type="text" name="est_vent_p" placeholder="" class="form-control">
-                                                    <div class="input-group-btn"><button class="btn btn-primary">actualizar</button></div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>Estocadas vent. Sec.</th>
-                                            <td>3x3</td>
-                                            <td>9</td>
-                                            <td>2</td>
-                                            <td>
-                                                <div class="input-group">
-                                                    <input type="text" name="estvent_s" placeholder="" class="form-control">
-                                                    <div class="input-group-btn"><button class="btn btn-primary">actualizar</button></div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
+									<?php foreach( $tareas_jefeturno as $parametros ) : ?>
+									<tr>
+										<td><?php echo $parametros['id'] ?></td>
+										<td><?php echo $parametros['nombre'] ?></td>
+										<td><?php echo $parametros['seccion'] ?></td>
+										<td><?php echo $parametros['avance_req'] ?></td>
+										<td><?php echo $parametros['avance_real'] ?></td>
+										<?php endforeach; ?>
+
+									</tbody>
                                 </table>
                             </div>
                         </div>
