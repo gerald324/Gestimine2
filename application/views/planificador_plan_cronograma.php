@@ -220,109 +220,109 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									<th scope="col">Infraestructura</th>
 									<th scope="col">Sección</th>
 									<th scope="col">Área</th>
-									<th scope="col">Total</th>
+									<th scope="col">Largo total (metros)</th>
 									<th scope="col">Año 1</th>
 									<th scope="col">Año 2</th>
 									<th scope="col">Año 3</th>
-									<th scope="col">Total</th>
+									<th scope="col">Avance (%)</th>
 								</tr>
 								</thead>
 								<tbody>
 								<tr>
 									<th scope="row">1</th>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
+									<td><?php echo "Galeria Undercut C"?></td>
+									<td><?php echo "5x5"?></td>
+									<td><?php echo "25"?></td>
+									<td><?php echo "5000"?></td>
+									<td><?php echo "2500"?></td>
+									<td><?php echo "2500"?></td>
+									<td><?php echo "-"?></td>
+									<td><?php echo "100%"?></td>
 								</tr>
 								<tr>
 									<th scope="row">2</th>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
+									<td><?php echo "Nivel de Transporte C"?></td>
+									<td><?php echo "5x5"?></td>
+									<td><?php echo "25"?></td>
+									<td><?php echo "3000"?></td>
+									<td><?php echo "-"?></td>
+									<td><?php echo "1500"?></td>
+									<td><?php echo "1500"?></td>
+									<td><?php echo "50%"?></td>
 								</tr>
 								<tr>
 									<th scope="row">3</th>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
+									<td><?php echo "Piques de vent. Ppal."?></td>
+									<td><?php echo "4x4"?></td>
+									<td><?php echo "16"?></td>
+									<td><?php echo "1120"?></td>
+									<td><?php echo "-"?></td>
+									<td><?php echo "1120"?></td>
+									<td><?php echo "-"?></td>
+									<td><?php echo "77.6%"?></td>
 
 								</tr>
 								<tr>
 									<th scope="row">4</th>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
+									<td><?php echo "Desquinche de carguío"?></td>
+									<td><?php echo "4x6.5"?></td>
+									<td><?php echo "26"?></td>
+									<td><?php echo "170"?></td>
+									<td><?php echo "170"?></td>
+									<td><?php echo "-"?></td>
+									<td><?php echo "-"?></td>
+									<td><?php echo "100%"?></td>
 								</tr>
 								<tr>
 									<th scope="row">5</th>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
+									<td><?php echo "Estocadas de maniobra"?></td>
+									<td><?php echo "5x5"?></td>
+									<td><?php echo "25"?></td>
+									<td><?php echo "100"?></td>
+									<td><?php echo "-"?></td>
+									<td><?php echo "100"?></td>
+									<td><?php echo "-"?></td>
+									<td><?php echo "100%"?></td>
 								</tr>
 								<tr>
 									<th scope="row">6</th>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
+									<td><?php echo "Estocadas vent. Ppal."?></td>
+									<td><?php echo "5x5"?></td>
+									<td><?php echo "25"?></td>
+									<td><?php echo "300"?></td>
+									<td><?php echo "200"?></td>
+									<td><?php echo "100"?></td>
+									<td><?php echo "-"?></td>
+									<td><?php echo "66.9%"?></td>
 								</tr>
 								<tr>
 									<th scope="row">7</th>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
+									<td><?php echo "Gal. Cara Libre A2"?></td>
+									<td><?php echo "5x5"?></td>
+									<td><?php echo "25"?></td>
+									<td><?php echo "23"?></td>
+									<td><?php echo "-"?></td>
+									<td><?php echo "-"?></td>
+									<td><?php echo "23"?></td>
+									<td><?php echo "0%"?></td>
 								</tr>
 								<tr>
 									<th scope="row">8</th>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
-									<td><?php echo " "?></td>
+									<td><?php echo "Estocada carguío 3"?></td>
+									<td><?php echo "5x5"?></td>
+									<td><?php echo "25"?></td>
+									<td><?php echo "5.75"?></td>
+									<td><?php echo "-"?></td>
+									<td><?php echo "-"?></td>
+									<td><?php echo "5.75"?></td>
+									<td><?php echo "0%"?></td>
 								</tr>
-								<tr>
+								<!--<tr>
 									<th scope="row"> </th>
 									<td>Total</td>
 									<td>	</td>
 									<td>	</td>
-								</tr>
+								</tr>	-->
 								</tbody>
 							</table>
 
