@@ -37,12 +37,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="container">
             <div class="login-content">
                 <div class="login-logo">
-                    <a href="index.html">
+                    <a href="#">
                         <img class="align-content" src="assets/images/logo.png" alt="">
                     </a>
                 </div>
                 <div class="login-form">
-                    <form action="<?= base_url('login/validate') ?>" method="POST" id="forma">
+                    <form action="login/validate" method="POST" id="forma">
                         <div class="form-group">
                             <label>Rut</label>
                             <input type="string" name="rut" id="rut" class="form-control" placeholder="12.345.678-9">

@@ -15,15 +15,25 @@ class Usuarios extends CI_Controller{
 		// avance requerido por turno, transporte requerido por turno
 		// nombre del tunel y rol del trabajador (avance_req, trans_req, nombre, rol)
 		$content_data = array(
-			'tareas_turno' => $datos['Usuarios']
+			'tareas_turno' => $datos['Usuarios'],
+			'rut' => $rut
 		);
 
 		$this->load->view('usuario_tareas.php',$content_data);
 	}
 
-	public function alertas(){
+	public function alertas($rut){
 		$this->load->model('Usuarios_Model','UM',true);
-		$this->load->view('usuario_alerta.php');
+		//revisar si se necesita otro modelo
+		$datos['Usuarios']=$this->UM->buscarTareasDeTrabajador($rut);
+		// el metodo buscarTareasDeTrabajador retorna un arreglo con los parametros
+		// avance requerido por turno, transporte requerido por turno
+		// nombre del tunel y rol del trabajador (avance_req, trans_req, nombre, rol)
+		$content_data = array(
+			'tareas_turno' => $datos['Usuarios'],
+			'rut' => $rut
+		);
+		$this->load->view('usuario_alerta.php',$content_data);
 	}
 }
 ?>

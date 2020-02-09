@@ -37,10 +37,10 @@
 		<div id="main-menu" class="main-menu collapse navbar-collapse">
 			<ul class="nav navbar-nav">
 				<li>
-					<a href="tareas"><i class="menu-icon fa fa-laptop"></i>Dashboard </a>
+					<a href="<?php echo base_url()?>Usuarios/tareas/<?php echo $rut;?>"><i class="menu-icon fa fa-laptop"></i>Dashboard </a>
 				</li>
 				<li>
-					<a href="alertas"><i class="menu-icon fa fa-exclamation-triangle"></i>Alertas </a>
+					<a href="<?php echo base_url()?>Usuarios/alertas/<?php echo $rut;?>"><i class="menu-icon fa fa-exclamation-triangle"></i>Alertas </a>
 				</li><!--Esto redirecciona al aviso de alerta-->
 			</ul>
 		</div><!-- /.navbar-collapse -->
